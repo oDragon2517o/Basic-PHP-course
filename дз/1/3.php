@@ -2,8 +2,8 @@
 
 function task()
 {
-    $task = readline("Какие планы? ");
-    $time = readline("Сколько времени это займет? ");
+    $task = readline("Какая задача стоит перед вами сегодня? ");
+    $time = readline("Сколько примерно времени эта задача займет? ");
 
     return [$task, $time];
 }
