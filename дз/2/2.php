@@ -1,31 +1,20 @@
 <?php
 
-// Список вопросов
-$answer1 = 2005;
-$answer2 = 2020;
-$answer3 = 2023;
-
-
 do {
-    echo ("Год выхода PS5? " . PHP_EOL .
-        $answer1 . PHP_EOL .
-        $answer2 . PHP_EOL .
-        $answer3 . PHP_EOL);
+    $n = (int)readline("Сколько запланировано задчь? " . \PHP_EOL);
+} while (!$n);
 
-    $data = (int)readline();
+// $task = readline("Какая задача стоит перед вами сегодня? ");
+// $time = readline("Сколько примерно времени эта задача займет? ");
 
-    if ($data == $answer1 || $data == $answer2 || $data == $answer3) {
-        $chec = false;
-    } else {
-        $chec = true;
-    }
 
-    if ($data !== 2020 && $chec == false) {
-        echo ("Ответ не верный");
-        break;
-    }
-    if ($data == 2020) {
-        echo ("Поздравляю!!!");
-        break;
-    }
-} while ($chec);
+
+for ($i = 1; $i <= $n; $i++) {
+    $task = readline("Какая задача стоит перед вами сегодня? ");
+    $time = readline("Сколько примерно времени эта задача займет? ");
+$summTime +=$time;
+    $zadachi .= "-$task ({$time}ч)\n";
+}
+
+
+echo $zadachi;
