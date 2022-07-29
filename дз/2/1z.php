@@ -7,12 +7,10 @@ $answer3 = 2023;
 
 
 do {
-
-
     $data = (int)readline("Год выхода PS5? " . PHP_EOL .
-    $answer1 . PHP_EOL .
-    $answer2 . PHP_EOL .
-    $answer3 . PHP_EOL);
+        $answer1 . PHP_EOL .
+        $answer2 . PHP_EOL .
+        $answer3 . PHP_EOL);
 
     if ($data == $answer1 || $data == $answer2 || $data == $answer3) {
         $chec = false;
