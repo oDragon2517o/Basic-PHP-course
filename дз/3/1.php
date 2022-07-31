@@ -5,6 +5,6 @@ $mass2 = range(1, 10);
 
 
 foreach ($mass2 as $key => $value) {
-    $mass3[$key] = $mass1[$key] * $mass2[$key];
+    $mass3[$key] = $value * $mass2[$key];
 }
 print_r($mass3);
