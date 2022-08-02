@@ -19,10 +19,4 @@ $mass2 = [
     "наиважнейщего",
 ];
 
-for ($i = 0; $i < 2; $i++) {
-    $mass3[$i] = $mass2[array_rand($mass2, 1)] . " " .  $mass1[array_rand($mass1, 1)];
-}
-$mass3[$i-1] .=" и ". $mass2[array_rand($mass2, 1)] . " " .  $mass1[array_rand($mass1, 1)];
-
-
-echo "Дорогой $name, от всего сердца поздравляю тебя с днем рождения, желаю " . implode(", ",$mass3) . "!";
+echo "Дорогой $name, от всего сердца поздравляю тебя с днем рождения, желаю {$mass2[array_rand($mass2, 1)]} {$mass1[array_rand($mass1, 1)]}, {$mass2[array_rand($mass2, 1)]} {$mass1[array_rand($mass1, 1)]} и {$mass2[array_rand($mass2, 1)]} {$mass1[array_rand($mass1, 1)]}";
