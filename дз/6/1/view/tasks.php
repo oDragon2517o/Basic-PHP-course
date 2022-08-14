@@ -1,15 +1,11 @@
 Задачи циклом
 
-<?php foreach ($tasks as $task):?>
-<div>
-    <?=$task?> [Done]
-</div>
-<?php endforeach;?>
+
 
 
 
 <h2>Список задачь</h2>
-<form method="post">
+<form action="/?controller=tasks&action=add" method="post">
     <input type="text" name="text" placeholder="Добавьте покупку">
     <input type="submit" value="Добавить">
 </form>
