@@ -5,8 +5,8 @@
 
 
 if (isset($_POST['text']) && $_POST['userId']) {
-    $userId = $_POST['userId'];
-    $text = $_POST['text'];
+    $userId = strip_tags($_POST['userId']);
+    $text = strip_tags($_POST['text']);
 
 
     $pdo = new PDO('sqlite:database.db');
@@ -19,7 +19,7 @@ if (isset($_POST['text']) && $_POST['userId']) {
 }
 
 if (isset($_POST['text']) == false  && isset($_POST['userId'])) {
-    $userId = $_POST['userId'];
+    $userId = strip_tags($_POST['userId']);
     $pdo = new PDO('sqlite:database.db');
     $sql = "SELECT*FROM tasks WHERE usesrId  IN ($userId)";
     $result = $pdo->query($sql);
