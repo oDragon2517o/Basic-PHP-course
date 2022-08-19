@@ -16,6 +16,7 @@ if (isset($_POST['text']) && $_POST['userId']) {
     echo "Добавлено";
     unset($_POST);
     header("Location: index.php");
+    die();
 }
 
 if (isset($_POST['text']) == false  && isset($_POST['userId'])) {
