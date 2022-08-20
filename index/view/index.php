@@ -1,3 +1,7 @@
+<?php
+// print_r($login);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +13,14 @@
 </head>
 
 <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi suscipit dolorum iusto odio deserunt, nam quos id non iure hic temporibus quo sapiente nisi sit dolor nemo reiciendis a!
+    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi suscipit dolorum iusto odio deserunt, nam quos id non iure hic temporibus quo sapiente nisi sit dolor nemo reiciendis a! -->
 
-    <?php if (is_null($username)) : ?>
+    <?php if (is_null($login)) : ?>
+        Всего плохого
         <a href="/?controller=security">Войти</a>
     <?php else : ?>
-        <?= $username ?> <a href="/?controller=security&action=logout">Выйти</a>
+        Добро пожаловать
+        <?= $login ?> <a href="/?controller=security&action=logout">Выйти</a>
         <a href="/?controller=tasks">Задачи</a>
 
     <?php endif; ?>

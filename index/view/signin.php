@@ -1,3 +1,9 @@
+<?php
+// print_r($_SESSION);
+// print_r($login);
+// var_dump($_SESSION);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,8 +19,8 @@
     <form method="post">
         <h3>Авторизация</h3>
 
-        <label for="username">Имя пользователя</label>
-        <input type="text" id="username" name="username" placeholder="Имя пользователя" required="" autofocus="">
+        <label for="username">Логин</label>
+        <input type="text" id="login" name="login" placeholder="Логин" required="" autofocus="">
         <label for="password">Пароль</label>
         <input type="password" id="password" name="password" placeholder="Пароль" required="">
         <button class="w-75 btn btn-lg btn-primary mt-1" type="submit">Войти</button>

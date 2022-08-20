@@ -6,9 +6,9 @@ class User
     private string $name;
     private string $login;
 
-    public function __construct(string $username = "")
+    public function __construct(string $login = "")
     {
-        $this->username = $username;
+        $this->login = $login;
     }
 
     public function getId(): string
